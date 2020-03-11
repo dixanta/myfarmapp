@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value = "/")
 public class HomeController {
     @GetMapping
-    @ResponseBody
     public String index(Model model){
         model.addAttribute("name","Creators Institute");
         return "index";
